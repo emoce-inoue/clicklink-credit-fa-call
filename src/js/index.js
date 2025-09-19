@@ -1,3 +1,3 @@
 import './utils.js';
-import './common.js';
+import './layout.js';
 import '../css/style.css';
