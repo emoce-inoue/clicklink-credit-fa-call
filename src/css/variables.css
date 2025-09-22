@@ -35,15 +35,14 @@
   --rounded-s: 4px;
   --rounded-m: 8px;
   --rounded-sl: 10px;
-  --rounded-25: 12px;
-  --rounded-34: 17px;
-  --rounded-50: 25px;
+  --rounded-12: 12px;
+  --rounded-17: 17px;
+  --rounded-25: 25px;
   --rounded-l: 30px;
   --rounded-full: 100%;
 
   /* color */
   --color-grayscale-0: #fff;
-  --color-grayscale-25: rgb(0 0 0 / 25%);
   --color-grayscale-1000: #000;
   --color-bluescale-0: #004098;
   --color-orangescale-0: #ff6f3d;
@@ -57,11 +56,12 @@
   --color-orange: var(--color-orangescale-0);
   --color-yellow: var(--color-yellowscale-0);
   --color-green: var(--color-greenscale-0);
-  --button-shadow: 1.5px 1.5px 1.5px 0 var(--color-grayscale-25);
+  --color-black-25: rgb(0 0 0 / 25%);
+  --button-shadow: 1.5px 1.5px 1.5px 0 var(--color-black-25);
   --yesno-button-inset-shadow: inset -1px -2px 2px 0 rgb(181 151 78 / 100%);
   --yesno-button-inset-shadow-selected: inset -1px -2px 2px 0 rgb(0 40 95 / 100%);
-  --yesno-button-shadow: 3px 3px 2px 0 var(--color-grayscale-25);
-  --background-modal: var(--color-grayscale-25);
+  --yesno-button-shadow: 3px 3px 2px 0 var(--color-black-25);
+  --background-modal: rgb(0 0 0 / 40%);
 
   /* z-index */
   --back-z-index: -1;
