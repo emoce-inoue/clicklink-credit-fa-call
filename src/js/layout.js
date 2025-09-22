@@ -143,7 +143,7 @@ const initializeModal = () => {
       toggleButtonGroup(qaButton, '.l-qa__button', 'l-qa__button--selected');
       clearSelection('.l-card', 'l-card--selected');
       clearSelection('.l-no-answer', 'l-no-answer--selected');
-      clearSelection('.l-no-answer__reason-button', 'l-no-answer__reason-button--selected'); // 🔹 追加！
+      clearSelection('.l-no-answer__reason-button', 'l-no-answer__reason-button--selected');
 
       if (qaButton.dataset.answer === 'yes') {
         const modalExcept = document.querySelector('.l-modal[data-target="5"]');
