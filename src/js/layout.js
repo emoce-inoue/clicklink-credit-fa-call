@@ -81,10 +81,19 @@ const initializeModal = () => {
 
       if (qaSection) {
         if (typeItem.classList.contains('l-type__list-item--except')) {
+          clearSelection('.l-no-answer', 'l-no-answer--selected');
+          clearSelection('.l-qa__button', 'l-qa__button--selected');
+          clearSelection('.l-no-answer__reason-button', 'l-no-answer__reason-button--selected');
+          clearSelection('.l-card', 'l-card--selected');
+
           qaSection.classList.add('l-qa--selected');
           scrollToElement(qaSection);
         } else {
           qaSection.classList.remove('l-qa--selected');
+          clearSelection('.l-no-answer', 'l-no-answer--selected');
+          clearSelection('.l-qa__button', 'l-qa__button--selected');
+          clearSelection('.l-no-answer__reason-button', 'l-no-answer__reason-button--selected');
+          clearSelection('.l-card', 'l-card--selected');
         }
       }
 
@@ -134,6 +143,7 @@ const initializeModal = () => {
       toggleButtonGroup(qaButton, '.l-qa__button', 'l-qa__button--selected');
       clearSelection('.l-card', 'l-card--selected');
       clearSelection('.l-no-answer', 'l-no-answer--selected');
+      clearSelection('.l-no-answer__reason-button', 'l-no-answer__reason-button--selected'); // 🔹 追加！
 
       if (qaButton.dataset.answer === 'yes') {
         const modalExcept = document.querySelector('.l-modal[data-target="5"]');
