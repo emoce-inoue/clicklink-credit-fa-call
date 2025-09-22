@@ -8,10 +8,9 @@
 :where(:root) {
   background-color: var(--background-base);
   color: var(--font-base);
-  font-family: var(--font-sans);
+  font-family: var(--font-inter);
   font-style: unset;
   font-size: 100%;
-  font-weight: var(--font-bold);
   font-feature-settings: 'pkna';
   text-align: start;
   letter-spacing: var(--tracking-normal);
